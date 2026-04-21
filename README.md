@@ -40,7 +40,7 @@ cp .env.example .env
 ```
 Open `.env` and fill in your Binance Futures Testnet credentials:
 
-BINANCE_API_KEY=your_testnet_api_key_here \n
+BINANCE_API_KEY=your_testnet_api_key_here 
 BINANCE_API_SECRET=your_testnet_api_secret_here
 
 Get your free testnet credentials at: https://testnet.binancefuture.com
