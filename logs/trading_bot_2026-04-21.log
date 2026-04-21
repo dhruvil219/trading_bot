@@ -27,3 +27,23 @@
 2026-04-21 16:00:58 | DEBUG    | Response: {'orderId': 13057307327, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': '4QmJEevrM5DrrJ4TFwRlKJ', 'price': '75000.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776767457999}
 2026-04-21 16:00:58 | INFO     | Order SUCCESS | ID=13057307327 | Status=NEW
 2026-04-21 16:00:58 | INFO     | Trading Bot Session Ended
+2026-04-21 16:33:19 | INFO     | ============================================================
+2026-04-21 16:33:19 | INFO     | Trading Bot Started
+2026-04-21 16:33:19 | INFO     | ============================================================
+2026-04-21 16:33:19 | DEBUG    | GET https://testnet.binancefuture.com/fapi/v1/time
+2026-04-21 16:33:19 | INFO     | Connection to Binance Testnet: OK
+2026-04-21 16:33:19 | INFO     | Placing MARKET BUY order | BTCUSDT | qty=0.01
+2026-04-21 16:33:19 | DEBUG    | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1776769399756}
+2026-04-21 16:33:20 | DEBUG    | Response: {'orderId': 13057399962, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'CbPnYOmYKxgXdNQHHdAKOQ', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776769399867}
+2026-04-21 16:33:20 | INFO     | Order SUCCESS | ID=13057399962 | Status=NEW
+2026-04-21 16:33:20 | INFO     | Trading Bot Session Ended
+2026-04-21 16:37:08 | INFO     | ============================================================
+2026-04-21 16:37:08 | INFO     | Trading Bot Started
+2026-04-21 16:37:08 | INFO     | ============================================================
+2026-04-21 16:37:51 | DEBUG    | GET https://testnet.binancefuture.com/fapi/v1/time
+2026-04-21 16:37:51 | INFO     | Connection to Binance Testnet: OK
+2026-04-21 16:37:51 | INFO     | Placing MARKET BUY order | BTCUSDT | qty=0.03
+2026-04-21 16:37:51 | DEBUG    | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.03, 'timestamp': 1776769671729}
+2026-04-21 16:37:52 | DEBUG    | Response: {'orderId': 13057409459, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'ToNOp1mFmLUEVHIqNZZrpT', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0300', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776769671844}
+2026-04-21 16:37:52 | INFO     | Order SUCCESS | ID=13057409459 | Status=NEW
+2026-04-21 16:37:52 | INFO     | Trading Bot Session Ended
