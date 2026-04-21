@@ -1,0 +1,29 @@
+2026-04-21 15:56:26 | INFO     | ============================================================
+2026-04-21 15:56:26 | INFO     | Trading Bot Started
+2026-04-21 15:56:26 | INFO     | ============================================================
+2026-04-21 15:56:26 | DEBUG    | GET https://testnet.binancefuture.com/fapi/v1/time
+2026-04-21 15:56:27 | INFO     | Connection to Binance Testnet: OK
+2026-04-21 15:56:27 | INFO     | Placing MARKET BUY order | BTCUSDT | qty=0.01
+2026-04-21 15:56:27 | DEBUG    | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1776767187022}
+2026-04-21 15:56:27 | DEBUG    | Response: {'orderId': 13057296676, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'AImEv06wMWbKfhMcqLQM7B', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776767187145}
+2026-04-21 15:56:27 | INFO     | Order SUCCESS | ID=13057296676 | Status=NEW
+2026-04-21 15:56:27 | INFO     | Trading Bot Session Ended
+2026-04-21 15:57:24 | INFO     | ============================================================
+2026-04-21 15:57:24 | INFO     | Trading Bot Started
+2026-04-21 15:57:24 | INFO     | ============================================================
+2026-04-21 15:57:24 | DEBUG    | GET https://testnet.binancefuture.com/fapi/v1/time
+2026-04-21 15:57:24 | INFO     | Connection to Binance Testnet: OK
+2026-04-21 15:57:24 | INFO     | Placing LIMIT SELL order | BTCUSDT | qty=0.01 | price=70000.0
+2026-04-21 15:57:24 | DEBUG    | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 70000.0, 'timeInForce': 'GTC', 'timestamp': 1776767244743}
+2026-04-21 15:57:24 | ERROR    | Order placement failed: Binance API Error [-4024]: Limit price can't be lower than 72675.95.
+2026-04-21 15:57:24 | ERROR    | Order failed: Binance API Error [-4024]: Limit price can't be lower than 72675.95.
+2026-04-21 16:00:57 | INFO     | ============================================================
+2026-04-21 16:00:57 | INFO     | Trading Bot Started
+2026-04-21 16:00:57 | INFO     | ============================================================
+2026-04-21 16:00:57 | DEBUG    | GET https://testnet.binancefuture.com/fapi/v1/time
+2026-04-21 16:00:57 | INFO     | Connection to Binance Testnet: OK
+2026-04-21 16:00:57 | INFO     | Placing LIMIT SELL order | BTCUSDT | qty=0.01 | price=75000.0
+2026-04-21 16:00:57 | DEBUG    | POST https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 75000.0, 'timeInForce': 'GTC', 'timestamp': 1776767457881}
+2026-04-21 16:00:58 | DEBUG    | Response: {'orderId': 13057307327, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': '4QmJEevrM5DrrJ4TFwRlKJ', 'price': '75000.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776767457999}
+2026-04-21 16:00:58 | INFO     | Order SUCCESS | ID=13057307327 | Status=NEW
+2026-04-21 16:00:58 | INFO     | Trading Bot Session Ended
