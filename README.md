@@ -15,31 +15,64 @@ logging, and robust error handling.
 
 ## Setup
 
-1. Clone the repo
-2. Create virtual environment: `python -m venv venv && source venv/bin/activate`
-3. Install dependencies: `pip install -r requirements.txt`
-4. Copy `.env.example` to `.env` and add your Testnet API credentials:
-BINANCE_API_KEY=your_key
-BINANCE_API_SECRET=your_secret
+## Setup
 
-Get credentials at: https://testnet.binancefuture.com
+**1. Clone the repo**
+```bash
+git clone https://github.com/yourusername/trading_bot.git
+cd trading_bot
+```
+
+**2. Create and activate virtual environment**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+**3. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**4. Add your API credentials**
+```bash
+cp .env.example .env
+```
+Open `.env` and fill in your Binance Futures Testnet credentials:
+
+BINANCE_API_KEY=your_testnet_api_key_here
+BINANCE_API_SECRET=your_testnet_api_secret_here
+
+Get your free testnet credentials at: https://testnet.binancefuture.com
 
 ## Usage
 
-### Market Order
+### Mode 1 — Interactive Menu (Enhanced CLI UX)
+Run without any arguments to get a guided interactive menu with arrow key navigation:
+```bash
+python cli.py
+```
+You will be prompted to select order type, side, symbol, quantity and price step by step with validation at each step.
+
+### Mode 2 — Direct Command
+
+**Market BUY:**
 ```bash
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.01
 ```
 
-### Limit Order
+**Limit SELL:**
 ```bash
-python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.01 --price 70000
+python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.01 --price 75000
 ```
 
-### Stop Market (Bonus)
+**Stop-Market SELL (Bonus):**
 ```bash
 python cli.py --symbol BTCUSDT --side SELL --type STOP_MARKET --quantity 0.01 --price 60000
 ```
+
+## Logging
+All API requests, responses and errors are automatically logged to: logs/trading_bot_YYYY-MM-DD.log
 
 ## Project Structure
 trading_bot/
@@ -54,4 +87,5 @@ logs/               # Auto-created log files
 ## Assumptions
 - Tested on Binance Futures USDT-M Testnet only
 - Minimum quantity for BTCUSDT is 0.001
-- Prices for Limit orders should be realistic (near market price) to avoid rejection
+- For Limit orders, price must be realistic (near current market price)
+- For Stop-Market orders, stop price must be below current price for SELL, above for BUY
